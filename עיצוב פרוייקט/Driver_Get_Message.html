@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="personal.css">
+    <link rel="stylesheet" href="messages.css">
+</head>
+
+<body onload=GetAllMyGetMessage()>
+    <div class="person">
+        <div id="home"><a href="index.html">חזרה לדף הבית</a></div>
+        <div class="nav">
+            <div class="name">
+                <span><img src="assets/Business-Man.svg" alt="">
+                    <h6 id="userName">שלום </h6>
+                </span>
+
+            </div>
+            <div class="subject">
+                <h2>הודעות נכנסות</h2>
+            </div>
+        </div>
+        <div class="main">
+            <div class="options">
+                <div class="optionss">
+                    <ul class="nav">
+
+                        <li><a href="mainPersonal.html"><span class="icon fa fa-home"></span>ראשי</a>
+                        </li><br>
+                        <li><a href="personal.html"><span class="current"></span>עדכון פרטים אישיים</a></li>
+                        <li><a href="updateCar.html"><span class="icon fa fa-check"></span>עדכון רכב חדש</a></li><br>
+                        <li><a href="updatePreferences.html"><span class="icon fa fa-toggle-on"></span>עדכון העדפות</a>
+                        </li>
+                        <li><a href="Driver_Travels.html"><span class="icon fa fa-plane"></span>הנסיעות שלי</a></li><br>
+                        <li><a href="DriverGiveMessages.html"><span class="icon far fa-file"></span>הודעות יוצאות</a>
+                        </li><br>
+                        <li><a href="Driver_Get_Message.html"><span class="icon far fa-file"></span>הודעות נכנסות</a>
+                        </li>
+                        <li> <img src="assets/Log Out-02-WF.svg" alt=""><input type="button" onclick="exit()"
+                                class="exit" value="יציאה מהחשבון">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="center">
+
+                <!-- <div id="myDIV" class="header">
+                    <h3>שליחת הודעה חדשה</h3>
+                    <input type="text" id="myInput" placeholder="תוכן ההודעה...">
+                    <span onclick="newElement()" class="addBtn">שלח</span>
+                </div> -->
+
+
+
+                <div id="AllMyGetMessages"></div>
+                <!-- <ul id="myUL">
+                    <li class="LI">Hit the gym</li>
+                    
+                    <li class="LI">Pay bills</li>
+                    <li class="LI">Meet George</li>
+                    <li class="LI">Buy eggs</li>
+                    <li class="LI">Read a book</li>
+                    <li class="LI">Organize office</li>
+                </ul> -->
+
+
+            </div>
+
+
+
+            <!-- //פרופיל -->
+
+            <!-- <div class="chip">
+                <img src="assets/השכרת-רכב-נתבג-4.3.jpg" alt="Person" width="96" height="96">
+                John Doe
+                <span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
+            </div>
+            <div class="chip">
+                <img src="assets/תמונה1.png" alt="Person" width="96" height="96">
+                John Doe
+                <span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
+            </div> -->
+
+
+
+            <div class="left"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="carDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Car">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Company" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DateOfCreature" Type="Int32" />
+    <Property Name="NumOfChairs" Type="Int32" Nullable="false" />
+    <Property Name="StateTheCar" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Drivers" Relationship="Self.FK_Drivers_ToCar" FromRole="Car" ToRole="Drivers" />
+  </EntityType>
+  <EntityType Name="DetailsOfTravel">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DriverId" Type="Int32" Nullable="false" />
+    <Property Name="Exit" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Destination" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="startDayAndHour" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="endDay" Type="DateTime" Precision="3" />
+    <Property Name="numOfChirs" Type="Int32" Nullable="false" />
+    <Property Name="Time" Type="Int64" Nullable="false" />
+    <Property Name="Price" Type="Double" />
+    <NavigationProperty Name="Driver" Relationship="Self.FK_DetailsOfTravel_ToDrivers" FromRole="DetailsOfTravel" ToRole="Drivers" />
+    <NavigationProperty Name="Joiners" Relationship="Self.FK_Joiners_ToDetailsOfTravel" FromRole="DetailsOfTravel" ToRole="Joiners" />
+  </EntityType>
+  <EntityType Name="Driver">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PersonId" Type="String" MaxLength="9" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Car" Type="Int32" />
+    <Property Name="PreferenceId" Type="Int32" />
+    <NavigationProperty Name="Car1" Relationship="Self.FK_Drivers_ToCar" FromRole="Drivers" ToRole="Car" />
+    <NavigationProperty Name="DetailsOfTravels" Relationship="Self.FK_DetailsOfTravel_ToDrivers" FromRole="Drivers" ToRole="DetailsOfTravel" />
+    <NavigationProperty Name="Person" Relationship="Self.FK_Drivers_ToPerson" FromRole="Drivers" ToRole="Person" />
+    <NavigationProperty Name="Preference" Relationship="Self.FK_Drivers_ToPreference" FromRole="Drivers" ToRole="Preference" />
+  </EntityType>
+  <EntityType Name="Joiner">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PassengerId" Type="String" MaxLength="9" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TravelId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="DetailsOfTravel" Relationship="Self.FK_Joiners_ToDetailsOfTravel" FromRole="Joiners" ToRole="DetailsOfTravel" />
+    <NavigationProperty Name="Passenger" Relationship="Self.FK_Joiners_ToPassenger" FromRole="Joiners" ToRole="Passengers" />
+  </EntityType>
+  <EntityType Name="Message">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idDriver" Type="String" MaxLength="9" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="idPassenger" Type="String" MaxLength="9" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MessageText" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Time" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="driverToPassenger" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Passenger" Relationship="Self.FK_Messages_ToPassengers" FromRole="Messages" ToRole="Passengers" />
+    <NavigationProperty Name="Person" Relationship="Self.FK_Messages_ToPerson" FromRole="Messages" ToRole="Person" />
+  </EntityType>
+  <EntityType Name="Passenger">
+    <Key>
+      <PropertyRef Name="PassengerId" />
+    </Key>
+    <Property Name="PassengerId" Type="String" MaxLength="9" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Joiners" Relationship="Self.FK_Joiners_ToPassenger" FromRole="Passengers" ToRole="Joiners" />
+    <NavigationProperty Name="Messages" Relationship="Self.FK_Messages_ToPassengers" FromRole="Passengers" ToRole="Messages" />
+    <NavigationProperty Name="Person" Relationship="Self.FK_Passengers_ToPerson" FromRole="Passengers" ToRole="Person" />
+  </EntityType>
+  <EntityType Name="Person">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="7" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Id" Type="String" MaxLength="9" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Gender" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Age" Type="Int32" Nullable="false" />
+    <Property Name="Adress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Phone" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Mail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Drivers" Relationship="Self.FK_Drivers_ToPerson" FromRole="Person" ToRole="Drivers" />
+    <NavigationProperty Name="Messages" Relationship="Self.FK_Messages_ToPerson" FromRole="Person" ToRole="Messages" />
+    <NavigationProperty Name="Passenger" Relationship="Self.FK_Passengers_ToPerson" FromRole="Person" ToRole="Passengers" />
+  </EntityType>
+  <EntityType Name="Preference">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Gender" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MinAge" Type="Int32" Nullable="false" />
+    <Property Name="MaxAge" Type="Int32" Nullable="false" />
+    <Property Name="Area" Type="Int32" Nullable="false" />
+    <Property Name="MorePreference" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Drivers" Relationship="Self.FK_Drivers_ToPreference" FromRole="Preference" ToRole="Drivers" />
+  </EntityType>
+  <Association Name="FK_Drivers_ToCar">
+    <End Role="Car" Type="Self.Car" Multiplicity="0..1" />
+    <End Role="Drivers" Type="Self.Driver" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Car">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Drivers">
+        <PropertyRef Name="Car" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DetailsOfTravel_ToDrivers">
+    <End Role="Drivers" Type="Self.Driver" Multiplicity="1" />
+    <End Role="DetailsOfTravel" Type="Self.DetailsOfTravel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Drivers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DetailsOfTravel">
+        <PropertyRef Name="DriverId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Joiners_ToDetailsOfTravel">
+    <End Role="DetailsOfTravel" Type="Self.DetailsOfTravel" Multiplicity="1" />
+    <End Role="Joiners" Type="Self.Joiner" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DetailsOfTravel">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Joiners">
+        <PropertyRef Name="TravelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Drivers_ToPerson">
+    <End Role="Person" Type="Self.Person" Multiplicity="1" />
+    <End Role="Drivers" Type="Self.Driver" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Person">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Drivers">
+        <PropertyRef Name="PersonId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Drivers_ToPreference">
+    <End Role="Preference" Type="Self.Preference" Multiplicity="0..1" />
+    <End Role="Drivers" Type="Self.Driver" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Preference">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Drivers">
+        <PropertyRef Name="PreferenceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Joiners_ToPassenger">
+    <End Role="Passengers" Type="Self.Passenger" Multiplicity="1" />
+    <End Role="Joiners" Type="Self.Joiner" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Passengers">
+        <PropertyRef Name="PassengerId" />
+      </Principal>
+      <Dependent Role="Joiners">
+        <PropertyRef Name="PassengerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Messages_ToPassengers">
+    <End Role="Passengers" Type="Self.Passenger" Multiplicity="1" />
+    <End Role="Messages" Type="Self.Message" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Passengers">
+        <PropertyRef Name="PassengerId" />
+      </Principal>
+      <Dependent Role="Messages">
+        <PropertyRef Name="idPassenger" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Messages_ToPerson">
+    <End Role="Person" Type="Self.Person" Multiplicity="1" />
+    <End Role="Messages" Type="Self.Message" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Person">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Messages">
+        <PropertyRef Name="idDriver" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Passengers_ToPerson">
+    <End Role="Person" Type="Self.Person" Multiplicity="1" />
+    <End Role="Passengers" Type="Self.Passenger" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Person">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Passengers">
+        <PropertyRef Name="PassengerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="carDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Cars" EntityType="Self.Car" />
+    <EntitySet Name="DetailsOfTravels" EntityType="Self.DetailsOfTravel" />
+    <EntitySet Name="Drivers" EntityType="Self.Driver" />
+    <EntitySet Name="Joiners" EntityType="Self.Joiner" />
+    <EntitySet Name="Messages" EntityType="Self.Message" />
+    <EntitySet Name="Passengers" EntityType="Self.Passenger" />
+    <EntitySet Name="People" EntityType="Self.Person" />
+    <EntitySet Name="Preferences" EntityType="Self.Preference" />
+    <AssociationSet Name="FK_Drivers_ToCar" Association="Self.FK_Drivers_ToCar">
+      <End Role="Car" EntitySet="Cars" />
+      <End Role="Drivers" EntitySet="Drivers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DetailsOfTravel_ToDrivers" Association="Self.FK_DetailsOfTravel_ToDrivers">
+      <End Role="Drivers" EntitySet="Drivers" />
+      <End Role="DetailsOfTravel" EntitySet="DetailsOfTravels" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Joiners_ToDetailsOfTravel" Association="Self.FK_Joiners_ToDetailsOfTravel">
+      <End Role="DetailsOfTravel" EntitySet="DetailsOfTravels" />
+      <End Role="Joiners" EntitySet="Joiners" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Drivers_ToPerson" Association="Self.FK_Drivers_ToPerson">
+      <End Role="Person" EntitySet="People" />
+      <End Role="Drivers" EntitySet="Drivers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Drivers_ToPreference" Association="Self.FK_Drivers_ToPreference">
+      <End Role="Preference" EntitySet="Preferences" />
+      <End Role="Drivers" EntitySet="Drivers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Joiners_ToPassenger" Association="Self.FK_Joiners_ToPassenger">
+      <End Role="Passengers" EntitySet="Passengers" />
+      <End Role="Joiners" EntitySet="Joiners" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Messages_ToPassengers" Association="Self.FK_Messages_ToPassengers">
+      <End Role="Passengers" EntitySet="Passengers" />
+      <End Role="Messages" EntitySet="Messages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Messages_ToPerson" Association="Self.FK_Messages_ToPerson">
+      <End Role="Person" EntitySet="People" />
+      <End Role="Messages" EntitySet="Messages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Passengers_ToPerson" Association="Self.FK_Passengers_ToPerson">
+      <End Role="Person" EntitySet="People" />
+      <End Role="Passengers" EntitySet="Passengers" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfDriverDAL xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DriverDAL>
+    <UserName>david choen</UserName>
+    <Password>1111111</Password>
+    <Id>325277283</Id>
+    <FirstName>david</FirstName>
+    <LastName>choen</LastName>
+    <Sex>son</Sex>
+    <Age>22</Age>
+    <Adress>hilel 6</Adress>
+    <City>ashdod</City>
+    <Phone>0556738966</Phone>
+    <Mail>dc11@gmail.com</Mail>
+    <Travels />
+  </DriverDAL>
+</ArrayOfDriverDAL>

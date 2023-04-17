@@ -1,0 +1,463 @@
+* {
+  box-sizing: border-box;
+  direction: rtl;
+  text-align: center;
+}
+
+.travels {
+
+  background-color: rgb(240, 233, 233);
+  overflow: scroll;
+  justify-content: center;
+  position: relative;
+  min-height: 1px;
+  /* padding-right: 15px;
+    padding-left: 15px; */
+  height: 460px;
+  margin-top: 5%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 15%;
+  margin-right: 0px;
+}
+
+.travel p {
+  /* background-color: rgb(236, 230, 230); */
+  background-color: white;
+  text-align: start;
+  width: 260px;
+  height: 320px;
+  /* border: 1.3px black solid; */
+  border-radius: 8px;
+  padding: 8%;
+  align-items: center;
+  margin: 18px;
+
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.join {
+  width: 50%;
+  margin-right: 20%;
+}
+
+p .btns {
+  align-items: center;
+}
+
+.btns {
+  display: flex;
+  flex-wrap: wrap;
+  height: 40%;
+  align-items: center;
+  padding-left: 7%;
+  justify-content: space-between;
+}
+
+.btn {
+  margin: 4px;
+  height: 40%;
+  border: 2px rgb(159, 11, 11) solid;
+}
+
+.delete,
+.join,
+.update {
+  cursor: pointer;
+  margin: 0px;
+  border: 2px solid darkred;
+  width: 25%;
+  border-radius: 6px;
+}
+
+.joiner {
+  border-bottom: 1px black solid;
+  padding-bottom: 4%;
+  text-align: start;
+}
+
+.activ {
+  border: 4px solid darkred;
+}
+
+.sidenav {
+  border: 3px solid darkred;
+  height: 60%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  margin-top: 3.5%;
+  /* Stay at the top */
+  left: 0;
+  background-color: white;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* /////////////////// */
+
+.sidenav1 {
+  /* display: none; */
+  border: 3px solid darkred;
+  height: 60%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  margin-top: 3.5%;
+  /* Stay at the top */
+  left: 0;
+  background-color: white;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav1 a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav1 a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav1 .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#Destination,
+#exit {
+  width: 77%;
+}
+
+#startDayAndHour {
+  width: 60%;
+}
+
+#time,
+#Price,
+#numOfChirs {
+  width: 40%;
+}
+
+/* .travely label{
+  font-weight: bold;
+} */
+
+.but {
+  width: 45%;
+  height: 20%;
+  background-color: rgb(98, 98, 98);
+  color: white;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+/* @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  } */
+
+
+#updateData {
+  display: none;
+  transition: ease;
+  font-size: 300px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(63, 62, 62, 0.4);
+  /* Black w/ opacity */
+}
+
+
+
+/* Modal Header */
+.modal-header {
+  text-align: center;
+  padding: 2px 16px;
+  background-color: #cdadad;
+  color: black;
+}
+
+/* Modal Body */
+.modal-body {
+  padding: 2px 16px;
+}
+
+/* Modal Footer */
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #f2f8f2;
+  color: white;
+}
+
+/* Modal Content */
+.modal-content {
+  margin-top: 20%;
+  position: relative;
+  background-color: #fefefe;
+  /* margin: auto; */
+  padding: 0;
+  border: 1px solid #888;
+  width: 25%;
+  height: 20%;
+  margin-right: 37%;
+  margin-top: 10%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+
+/* Modal Content/Box */
+/* .modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+} */
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+/* Add Animation */
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0
+  }
+
+  to {
+    top: 0;
+    opacity: 1
+  }
+}
+
+
+
+
+#snackbar {
+  visibility: hidden;
+  /* Hidden by default. Visible on click */
+  min-width: 250px;
+  /* Set a default minimum width */
+  margin-left: -125px;
+  /* Divide value of min-width by 2 */
+  background-color: #333;
+  /* Black background color */
+  color: #fff;
+  /* White text color */
+  text-align: center;
+  /* Centered text */
+  border-radius: 2px;
+  /* Rounded borders */
+  padding: 16px;
+  /* Padding */
+  position: fixed;
+  /* Sit on top of the screen */
+  z-index: 1;
+  /* Add a z-index if needed */
+  left: 50%;
+  /* Center the snackbar */
+  bottom: 30px;
+  /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+  visibility: visible;
+  /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+  However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+
+/* טוען בעמוד נסיעות */
+.loader {
+  margin-right: 46%;
+  margin-top: 20%;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #4c4c4d;
+  width: 125px;
+  height: 125px;
+  -webkit-animation: spin 2s linear infinite;
+  /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* .loader {
+  border-top: 16px solid blue;
+  border-bottom: 16px solid blue;
+} */
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

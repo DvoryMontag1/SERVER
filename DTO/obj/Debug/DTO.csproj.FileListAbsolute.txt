@@ -1,0 +1,70 @@
+E:\שנה ב\פרוייקט c#\SERVER\DTO\bin\Debug\DTO.dll
+E:\שנה ב\פרוייקט c#\SERVER\DTO\bin\Debug\DTO.pdb
+E:\שנה ב\פרוייקט c#\SERVER\DTO\bin\Debug\DAL.dll
+E:\שנה ב\פרוייקט c#\SERVER\DTO\bin\Debug\DAL.pdb
+E:\שנה ב\פרוייקט c#\SERVER\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+E:\שנה ב\פרוייקט c#\SERVER\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+E:\שנה ב\פרוייקט c#\SERVER\DTO\obj\Debug\DTO.csproj.CopyComplete
+E:\שנה ב\פרוייקט c#\SERVER\DTO\obj\Debug\DTO.dll
+E:\שנה ב\פרוייקט c#\SERVER\DTO\obj\Debug\DTO.pdb
+F:\שנה ב\פרוייקט c#\SERVER\DTO\bin\Debug\DTO.dll
+F:\שנה ב\פרוייקט c#\SERVER\DTO\bin\Debug\DTO.pdb
+F:\שנה ב\פרוייקט c#\SERVER\DTO\bin\Debug\DAL.dll
+F:\שנה ב\פרוייקט c#\SERVER\DTO\bin\Debug\DAL.pdb
+F:\שנה ב\פרוייקט c#\SERVER\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+F:\שנה ב\פרוייקט c#\SERVER\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+F:\שנה ב\פרוייקט c#\SERVER\DTO\obj\Debug\DTO.csproj.CopyComplete
+F:\שנה ב\פרוייקט c#\SERVER\DTO\obj\Debug\DTO.dll
+F:\שנה ב\פרוייקט c#\SERVER\DTO\obj\Debug\DTO.pdb
+D:\שנה ב\פרוייקט c#\SERVER\DTO\bin\Debug\DTO.dll
+D:\שנה ב\פרוייקט c#\SERVER\DTO\bin\Debug\DTO.pdb
+D:\שנה ב\פרוייקט c#\SERVER\DTO\bin\Debug\DAL.dll
+D:\שנה ב\פרוייקט c#\SERVER\DTO\bin\Debug\DAL.pdb
+D:\שנה ב\פרוייקט c#\SERVER\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+D:\שנה ב\פרוייקט c#\SERVER\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\שנה ב\פרוייקט c#\SERVER\DTO\obj\Debug\DTO.csproj.CopyComplete
+D:\שנה ב\פרוייקט c#\SERVER\DTO\obj\Debug\DTO.dll
+D:\שנה ב\פרוייקט c#\SERVER\DTO\obj\Debug\DTO.pdb
+C:\Users\משפחת מונטג\Desktop\SERVER\DTO\bin\Debug\DTO.dll
+C:\Users\משפחת מונטג\Desktop\SERVER\DTO\bin\Debug\DTO.pdb
+C:\Users\משפחת מונטג\Desktop\SERVER\DTO\bin\Debug\DAL.dll
+C:\Users\משפחת מונטג\Desktop\SERVER\DTO\bin\Debug\DAL.pdb
+C:\Users\משפחת מונטג\Desktop\SERVER\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\משפחת מונטג\Desktop\SERVER\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\משפחת מונטג\Desktop\SERVER\DTO\obj\Debug\DTO.csproj.CopyComplete
+C:\Users\משפחת מונטג\Desktop\SERVER\DTO\obj\Debug\DTO.dll
+C:\Users\משפחת מונטג\Desktop\SERVER\DTO\obj\Debug\DTO.pdb
+F:\SERVER\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+F:\SERVER\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+F:\SERVER\DTO\obj\Debug\DTO.dll
+F:\SERVER\DTO\obj\Debug\DTO.pdb
+E:\SERVER\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+E:\SERVER\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+E:\SERVER\DTO\obj\Debug\DTO.dll
+E:\SERVER\DTO\obj\Debug\DTO.pdb
+E:\SERVER\DTO\bin\Debug\DTO.dll
+E:\SERVER\DTO\bin\Debug\DTO.pdb
+E:\SERVER\DTO\bin\Debug\DAL.dll
+E:\SERVER\DTO\bin\Debug\EntityFramework.dll
+E:\SERVER\DTO\bin\Debug\DAL.pdb
+E:\SERVER\DTO\bin\Debug\DAL.dll.config
+E:\SERVER\DTO\bin\Debug\EntityFramework.xml
+E:\SERVER\DTO\obj\Debug\DTO.csproj.CopyComplete
+C:\Users\Comp15\Desktop\SERVER\DTO\bin\Debug\DTO.dll
+C:\Users\Comp15\Desktop\SERVER\DTO\bin\Debug\DTO.pdb
+C:\Users\Comp15\Desktop\SERVER\DTO\bin\Debug\DAL.dll
+C:\Users\Comp15\Desktop\SERVER\DTO\bin\Debug\EntityFramework.dll
+C:\Users\Comp15\Desktop\SERVER\DTO\bin\Debug\DAL.pdb
+C:\Users\Comp15\Desktop\SERVER\DTO\bin\Debug\DAL.dll.config
+C:\Users\Comp15\Desktop\SERVER\DTO\bin\Debug\EntityFramework.xml
+C:\Users\Comp15\Desktop\SERVER\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+C:\Users\Comp15\Desktop\SERVER\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Comp15\Desktop\SERVER\DTO\obj\Debug\DTO.csproj.CopyComplete
+C:\Users\Comp15\Desktop\SERVER\DTO\obj\Debug\DTO.dll
+C:\Users\Comp15\Desktop\SERVER\DTO\obj\Debug\DTO.pdb
+E:\שנה ב\פרוייקט c#\SERVER\DTO\bin\Debug\EntityFramework.dll
+E:\שנה ב\פרוייקט c#\SERVER\DTO\bin\Debug\DAL.dll.config
+E:\שנה ב\פרוייקט c#\SERVER\DTO\bin\Debug\EntityFramework.xml
+F:\שנה ב\פרוייקט c#\SERVER\DTO\bin\Debug\EntityFramework.dll
+F:\שנה ב\פרוייקט c#\SERVER\DTO\bin\Debug\DAL.dll.config
+F:\שנה ב\פרוייקט c#\SERVER\DTO\bin\Debug\EntityFramework.xml

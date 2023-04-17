@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="carDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Car">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Company" Type="nvarchar" MaxLength="50" />
+    <Property Name="DateOfCreature" Type="int" />
+    <Property Name="NumOfChairs" Type="int" Nullable="false" />
+    <Property Name="StateTheCar" Type="nvarchar(max)" />
+    <Property Name="Image" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="DetailsOfTravel">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DriverId" Type="int" Nullable="false" />
+    <Property Name="Exit" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Destination" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="startDayAndHour" Type="datetime" Nullable="false" />
+    <Property Name="endDay" Type="datetime" />
+    <Property Name="numOfChirs" Type="int" Nullable="false" />
+    <Property Name="Time" Type="bigint" Nullable="false" />
+    <Property Name="Price" Type="float" />
+  </EntityType>
+  <EntityType Name="Drivers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PersonId" Type="nvarchar" MaxLength="9" Nullable="false" />
+    <Property Name="Car" Type="int" />
+    <Property Name="PreferenceId" Type="int" />
+  </EntityType>
+  <EntityType Name="Joiners">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PassengerId" Type="nvarchar" MaxLength="9" Nullable="false" />
+    <Property Name="TravelId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Messages">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idDriver" Type="nvarchar" MaxLength="9" Nullable="false" />
+    <Property Name="idPassenger" Type="nvarchar" MaxLength="9" Nullable="false" />
+    <Property Name="MessageText" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Time" Type="datetime" Nullable="false" />
+    <Property Name="driverToPassenger" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Passengers">
+    <Key>
+      <PropertyRef Name="PassengerId" />
+    </Key>
+    <Property Name="PassengerId" Type="nvarchar" MaxLength="9" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Person">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="UserName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="7" Nullable="false" />
+    <Property Name="Id" Type="nvarchar" MaxLength="9" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Gender" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Age" Type="int" Nullable="false" />
+    <Property Name="Adress" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="City" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="15" Nullable="false" />
+    <Property Name="Mail" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Preference">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Gender" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="MinAge" Type="int" Nullable="false" />
+    <Property Name="MaxAge" Type="int" Nullable="false" />
+    <Property Name="Area" Type="int" Nullable="false" />
+    <Property Name="MorePreference" Type="nvarchar(max)" />
+  </EntityType>
+  <Association Name="FK_DetailsOfTravel_ToDrivers">
+    <End Role="Drivers" Type="Self.Drivers" Multiplicity="1" />
+    <End Role="DetailsOfTravel" Type="Self.DetailsOfTravel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Drivers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DetailsOfTravel">
+        <PropertyRef Name="DriverId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Drivers_ToCar">
+    <End Role="Car" Type="Self.Car" Multiplicity="0..1" />
+    <End Role="Drivers" Type="Self.Drivers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Car">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Drivers">
+        <PropertyRef Name="Car" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Drivers_ToPerson">
+    <End Role="Person" Type="Self.Person" Multiplicity="1" />
+    <End Role="Drivers" Type="Self.Drivers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Person">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Drivers">
+        <PropertyRef Name="PersonId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Drivers_ToPreference">
+    <End Role="Preference" Type="Self.Preference" Multiplicity="0..1" />
+    <End Role="Drivers" Type="Self.Drivers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Preference">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Drivers">
+        <PropertyRef Name="PreferenceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Joiners_ToDetailsOfTravel">
+    <End Role="DetailsOfTravel" Type="Self.DetailsOfTravel" Multiplicity="1" />
+    <End Role="Joiners" Type="Self.Joiners" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DetailsOfTravel">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Joiners">
+        <PropertyRef Name="TravelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Joiners_ToPassenger">
+    <End Role="Passengers" Type="Self.Passengers" Multiplicity="1" />
+    <End Role="Joiners" Type="Self.Joiners" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Passengers">
+        <PropertyRef Name="PassengerId" />
+      </Principal>
+      <Dependent Role="Joiners">
+        <PropertyRef Name="PassengerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Messages_ToPassengers">
+    <End Role="Passengers" Type="Self.Passengers" Multiplicity="1" />
+    <End Role="Messages" Type="Self.Messages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Passengers">
+        <PropertyRef Name="PassengerId" />
+      </Principal>
+      <Dependent Role="Messages">
+        <PropertyRef Name="idPassenger" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Messages_ToPerson">
+    <End Role="Person" Type="Self.Person" Multiplicity="1" />
+    <End Role="Messages" Type="Self.Messages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Person">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Messages">
+        <PropertyRef Name="idDriver" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Passengers_ToPerson">
+    <End Role="Person" Type="Self.Person" Multiplicity="1" />
+    <End Role="Passengers" Type="Self.Passengers" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Person">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Passengers">
+        <PropertyRef Name="PassengerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="carDBModelStoreContainer">
+    <EntitySet Name="Car" EntityType="Self.Car" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DetailsOfTravel" EntityType="Self.DetailsOfTravel" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Drivers" EntityType="Self.Drivers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Joiners" EntityType="Self.Joiners" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Messages" EntityType="Self.Messages" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Passengers" EntityType="Self.Passengers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Person" EntityType="Self.Person" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Preference" EntityType="Self.Preference" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_DetailsOfTravel_ToDrivers" Association="Self.FK_DetailsOfTravel_ToDrivers">
+      <End Role="Drivers" EntitySet="Drivers" />
+      <End Role="DetailsOfTravel" EntitySet="DetailsOfTravel" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Drivers_ToCar" Association="Self.FK_Drivers_ToCar">
+      <End Role="Car" EntitySet="Car" />
+      <End Role="Drivers" EntitySet="Drivers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Drivers_ToPerson" Association="Self.FK_Drivers_ToPerson">
+      <End Role="Person" EntitySet="Person" />
+      <End Role="Drivers" EntitySet="Drivers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Drivers_ToPreference" Association="Self.FK_Drivers_ToPreference">
+      <End Role="Preference" EntitySet="Preference" />
+      <End Role="Drivers" EntitySet="Drivers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Joiners_ToDetailsOfTravel" Association="Self.FK_Joiners_ToDetailsOfTravel">
+      <End Role="DetailsOfTravel" EntitySet="DetailsOfTravel" />
+      <End Role="Joiners" EntitySet="Joiners" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Joiners_ToPassenger" Association="Self.FK_Joiners_ToPassenger">
+      <End Role="Passengers" EntitySet="Passengers" />
+      <End Role="Joiners" EntitySet="Joiners" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Messages_ToPassengers" Association="Self.FK_Messages_ToPassengers">
+      <End Role="Passengers" EntitySet="Passengers" />
+      <End Role="Messages" EntitySet="Messages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Messages_ToPerson" Association="Self.FK_Messages_ToPerson">
+      <End Role="Person" EntitySet="Person" />
+      <End Role="Messages" EntitySet="Messages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Passengers_ToPerson" Association="Self.FK_Passengers_ToPerson">
+      <End Role="Person" EntitySet="Person" />
+      <End Role="Passengers" EntitySet="Passengers" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    direction: rtl;
+    text-align: center;
+}
+
+.person {
+    width: 100%;
+}
+
+
+.nav {
+    margin-top: 2%;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+
+.name {
+    width: 20%;
+    background-color: rgb(67, 65, 65);
+    color: white;
+}
+
+.subject {
+
+    width: 80%;
+    background-color: darkred;
+
+}
+
+.subject h2 {
+    margin: 0.9%;
+    color: white;
+    text-align: right;
+}
+
+.main {
+    margin-right: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.options {
+
+    padding-top: 20px;
+    background-color: white;
+    width: 20%;
+    /* border-left: 1px solid black; */
+}
+
+.center {
+    background-color: white;
+    width: 60%;
+}
+
+.coteret {
+    width: 100%;
+    margin-bottom: 3%;
+}
+
+.left {
+    /* box-shadow: 0px 2px 5px; */
+    width: 20%;
+}
+
+.optionss {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+
+.nav>li>a {
+    text-decoration: none;
+    height: 54px;
+    line-height: 52px;
+    display: block;
+    color: #444;
+    font-size: 18px;
+    font-weight: 400;
+    /* padding-right: 48px; */
+    position: relative;
+    overflow: hidden;
+}
+
+.nav>li>a:hover {
+    color: darkred;
+}
+
+#home {
+    width: 10%;
+    height: 20%;
+    border-left: solid #444 1px;
+    border-right: solid #444 1px;
+    margin-right: 18%;
+}
+
+.details {
+    /* display: block; */
+    border: solid rgb(225, 224, 243) 1px;
+    background-color: white;
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    padding: 25px;
+    margin-top: 5%;
+
+}
+
+
+/* #update {
+    display: block;
+} */
+
+.det-input {
+    width: 280px;
+    height: 55px;
+    border: solid 1.7px #939495;
+    /* border-radius: 3px 3px 3px 3px; */
+}
+
+
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    margin-bottom: 30px;
+}
+
+.current {
+    color: rgb(103, 169, 171);
+}
+
+#butt {
+    /* background-color: white; */
+    border: 2px solid darkred;
+    /* border-radius: 8px; */
+    color: black;
+    /* width: 70%; */
+}
+
+#butt:hover {
+    background-color: rgb(58, 57, 57);
+    color: white;
+}
+
+
+/* סרגל ריצה */
+#myProgress {
+    width: 100%;
+    background-color: grey;
+}
+
+#myBar {
+    width: 1%;
+    height: 30px;
+    background-color: green;
+}
+
+.exit {
+    background-color: white;
+    border: 0px;
+
+    font-weight: bold;
+    color: rgb(28, 28, 28);
+}

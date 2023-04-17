@@ -1,0 +1,132 @@
+.conect {
+    width: 30%;
+
+    font-size: large;
+    align-items: center;
+    margin-top: 2%;
+    margin-right: 35%;
+    /* margin: auto; */
+    justify-content: center;
+    display: flex;
+
+}
+
+.join {
+    justify-content: center;
+
+    font-size: large;
+
+    color: black;
+}
+
+.addUser {
+
+    display: flex;
+    /* width: 50%;
+    margin-right: 25%;
+    height: 30%;
+    margin-top: 35%; */
+    justify-content: center;
+    align-items: center;
+    padding: 0.5%;
+}
+
+.picture {
+    width: 400px;
+    height: 350px;
+    border-radius: 8px;
+    border: solid 1.5px black;
+    z-index: 10;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.picture img {
+    width: 400px;
+    height: 250px;
+    border-radius: 8px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+h2 {
+    text-align: center;
+    margin: auto;
+    padding: 6%;
+}
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+    cursor: pointer;
+    background-color: transparent;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+    border-radius: 50%;
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front,
+.flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side */
+.flip-box-front {
+    background-color: #bbb;
+    color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+    background-color: #bbb;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.flip-box:hover .flip-box-inner {
+    transform: rotateX(180deg);
+}
+
+.flip-box-back {
+    transform: rotateX(180deg);
+}
+
+/* a {
+
+    text-decoration: none;
+} */
+
+div h5 {
+    color: rgb(158, 9, 9);
+    align-items: center;
+    margin-top: 35%;
+}

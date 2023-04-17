@@ -1,0 +1,62 @@
+E:\שנה ב\פרוייקט c#\SERVER\DAL\bin\Debug\DAL.dll
+E:\שנה ב\פרוייקט c#\SERVER\DAL\bin\Debug\DAL.pdb
+E:\שנה ב\פרוייקט c#\SERVER\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+E:\שנה ב\פרוייקט c#\SERVER\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\שנה ב\פרוייקט c#\SERVER\DAL\obj\Debug\DAL.dll
+E:\שנה ב\פרוייקט c#\SERVER\DAL\obj\Debug\DAL.pdb
+F:\שנה ב\פרוייקט c#\SERVER\DAL\bin\Debug\DAL.dll
+F:\שנה ב\פרוייקט c#\SERVER\DAL\bin\Debug\DAL.pdb
+F:\שנה ב\פרוייקט c#\SERVER\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+F:\שנה ב\פרוייקט c#\SERVER\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+F:\שנה ב\פרוייקט c#\SERVER\DAL\obj\Debug\DAL.dll
+F:\שנה ב\פרוייקט c#\SERVER\DAL\obj\Debug\DAL.pdb
+D:\שנה ב\פרוייקט c#\SERVER\DAL\bin\Debug\DAL.dll
+D:\שנה ב\פרוייקט c#\SERVER\DAL\bin\Debug\DAL.pdb
+D:\שנה ב\פרוייקט c#\SERVER\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\שנה ב\פרוייקט c#\SERVER\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\שנה ב\פרוייקט c#\SERVER\DAL\obj\Debug\DAL.dll
+D:\שנה ב\פרוייקט c#\SERVER\DAL\obj\Debug\DAL.pdb
+C:\Users\משפחת מונטג\Desktop\SERVER\DAL\bin\Debug\DAL.dll
+C:\Users\משפחת מונטג\Desktop\SERVER\DAL\bin\Debug\DAL.pdb
+C:\Users\משפחת מונטג\Desktop\SERVER\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\משפחת מונטג\Desktop\SERVER\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\משפחת מונטג\Desktop\SERVER\DAL\obj\Debug\DAL.dll
+C:\Users\משפחת מונטג\Desktop\SERVER\DAL\obj\Debug\DAL.pdb
+F:\SERVER\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+F:\SERVER\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+F:\SERVER\DAL\obj\Debug\DAL.dll
+F:\SERVER\DAL\obj\Debug\DAL.pdb
+F:\SERVER\DAL\bin\Debug\DAL.dll.config
+F:\SERVER\DAL\bin\Debug\DAL.dll
+F:\SERVER\DAL\bin\Debug\DAL.pdb
+F:\SERVER\DAL\bin\Debug\EntityFramework.dll
+F:\SERVER\DAL\bin\Debug\EntityFramework.xml
+F:\SERVER\DAL\obj\Debug\DAL.csproj.CopyComplete
+E:\SERVER\DAL\bin\Debug\DAL.dll.config
+E:\SERVER\DAL\bin\Debug\DAL.dll
+E:\SERVER\DAL\bin\Debug\DAL.pdb
+E:\SERVER\DAL\bin\Debug\EntityFramework.dll
+E:\SERVER\DAL\bin\Debug\EntityFramework.xml
+E:\SERVER\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+E:\SERVER\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\SERVER\DAL\obj\Debug\DAL.csproj.CopyComplete
+E:\SERVER\DAL\obj\Debug\DAL.dll
+E:\SERVER\DAL\obj\Debug\DAL.pdb
+C:\Users\Comp15\Desktop\SERVER\DAL\bin\Debug\DAL.dll.config
+C:\Users\Comp15\Desktop\SERVER\DAL\bin\Debug\DAL.dll
+C:\Users\Comp15\Desktop\SERVER\DAL\bin\Debug\DAL.pdb
+C:\Users\Comp15\Desktop\SERVER\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Comp15\Desktop\SERVER\DAL\bin\Debug\EntityFramework.xml
+C:\Users\Comp15\Desktop\SERVER\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\Comp15\Desktop\SERVER\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Comp15\Desktop\SERVER\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\Comp15\Desktop\SERVER\DAL\obj\Debug\DAL.dll
+C:\Users\Comp15\Desktop\SERVER\DAL\obj\Debug\DAL.pdb
+E:\שנה ב\פרוייקט c#\SERVER\DAL\bin\Debug\DAL.dll.config
+E:\שנה ב\פרוייקט c#\SERVER\DAL\bin\Debug\EntityFramework.dll
+E:\שנה ב\פרוייקט c#\SERVER\DAL\bin\Debug\EntityFramework.xml
+E:\שנה ב\פרוייקט c#\SERVER\DAL\obj\Debug\DAL.csproj.CopyComplete
+F:\שנה ב\פרוייקט c#\SERVER\DAL\bin\Debug\DAL.dll.config
+F:\שנה ב\פרוייקט c#\SERVER\DAL\bin\Debug\EntityFramework.dll
+F:\שנה ב\פרוייקט c#\SERVER\DAL\bin\Debug\EntityFramework.xml
+F:\שנה ב\פרוייקט c#\SERVER\DAL\obj\Debug\DAL.csproj.CopyComplete

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>דף הבית</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="script.js"></script>
+    <script src="script1.js"></script>
+    <link rel="stylesheet" href="add.html">
+    <link rel="stylesheet" href="passenger.html">
+    <link rel="stylesheet" href="mainPersonal.html">
+
+
+
+</head>
+
+<body onload="ifconsist()">
+    <div class="navbar">
+        <div class="d">
+            <div id="exitfrom">
+                <img class="exit" src="assets/Log Out-02-WF.svg" alt=""><input type="button" onclick="exit()"
+                    class="exit" value="התנתק">
+
+            </div>
+
+        </div>
+        <a class="active" onclick="Active()" href="index.html">דף הבית</a>
+        <a class="notActive" id="toConnect" href="#"
+            onclick="document.getElementById('id01').style.display='block'">התחברות</a>
+
+        <a class="notActive" id="toDriver" href="driver.html">נהגים</a>
+
+        <a class="notActive" id="toPassenger" href="passengers.html">נוסעים</a>
+
+        <a class="notActive" onclick="Active()" href="add.html">הרשמה</a>
+        <a class="notActive" href="#" onclick="ifAlreadyConnect()">איזור אישי</a>
+        <div class="d"></div>
+        <div class="d"></div>
+    </div>
+
+    <div class="bg">
+        <!-- <div class="firstPage"> -->
+        <!-- <img class="logo" src="assets/לוגו-כתר-איכותי_1933x955.png" alt="">
+       <h1> ממשק אחד, אפליקציה אחת, בכל העולם</h1>
+        <p class="text">שירות שיתוף הנסיעות של ??? מאפשר לנהגים ונוסעים לחבור לצורך נסיעה משותפת. השירות מפגיש בין נוסעי תחבורה ציבורית לבין נהגים הנוסעים אל עבר יעד משותף. הנוסעים מגיעים אל יעדם בקלות ובמהירות, והנהגים מקבלים סיוע בצמצום הוצאות הדלק החודשית.</p>
+         -->
+        <!-- <img class="im"  src="assets/iPhones-Mockup-(Gold).png" > -->
+        <!-- </div> -->
+
+    </div>
+
+    <div id="id01">
+        <!-- טופס התחברות -->
+        <form action="" method="post" class="animate" onsubmit="return false">
+            <!-- <div class="imgcontainer">
+                <img src="" alt="Avatar" class="avatar">
+            </div> -->
+
+
+            <div class="container" id="cont">
+                <span><b> עדיין לא נרשמתם? </b><a href="add.html"> <b class="kishur"> ליצירת חשבון </b></a></span>
+                <!-- <label for="uname"></label> -->
+                <input type="text" placeholder="הכנס שם משתמש" name="uname" id="usrnm" required>
+
+                <!-- <label for="psw"></label> -->
+                <input type="password" placeholder="הכנס סיסמה" name="psw" id="psw" required>
+                <span id="seven" style="display: none;">*הסיסמא צריכה להיות בת 7 ספרות</span>
+                <!-- <label>
+                    <input type="checkbox" required onclick="myFunction()">הראה סיסמה
+                </label> -->
+                <button type="submit" onclick="CheckPass()">התחברות</button>
+            </div>
+
+            <!-- ספינר -->
+            <div id="spin">
+                <div class="spinner-border text-primary"></div>
+            </div>
+
+            <!-- <div class="container" style="background-color:#f1f1f1"> -->
+            <!-- <button type="reset" class="cancelbtn" onclick="cancle()">ביטול</button> -->
+            <!-- <span class="psw">שכחת <a href="#">סיסמה?</a></span> -->
+            <!-- </div> -->
+            <span id="error"></span>
+        </form>
+
+    </div>
+
+
+
+</body>
+
+</html>

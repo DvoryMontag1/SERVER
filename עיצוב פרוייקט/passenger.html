@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="driver2.css">
+
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="d"></div>
+        <a class="active" href="index.html">דף הבית</a>
+        <a href="#" onclick="document.getElementById('id01').style.display='block'">התחברות</a>
+        <a href="add.html">הרשמה</a>
+        <a href="personal.html">איזור אישי</a>
+        <div class="d"></div>
+        <div class="d"></div>
+    </div>
+    <form id="regForm" action="">
+
+        <h3>טופס רישום נוסע</h3>
+
+        <!-- One "tab" for each step in the form: -->
+        <div class="tab">
+            <p><input placeholder="שם פרטי" id="firstName" oninput="this.className = ''"></p>
+            <p><input placeholder="שם משפחה" id="lastName" oninput="this.className = ''"></p>
+            <p><input placeholder="מספר זהות" id="id" oninput="this.className = ''"></p>
+            <fieldset>
+                <p>
+                    <input id="gender" placeholder="מין" list="Gender" oninput="this.className = ''">
+                    <datalist id="Gender">
+                        <option value="זכר">
+                            זכר
+                        </option>
+                        <option value="נקבה">
+                            נקבה
+                        </option>
+
+                    </datalist>
+
+                </p>
+            </fieldset>
+            <p><input type="number" placeholder="שנת לידה" id="age" oninput="this.className = ''"></p>
+            <p><input placeholder="עיר מגורים" id="city" oninput="this.className = ''"></p>
+            <p><input placeholder="רחוב" id="adress" oninput="this.className = ''"></p>
+        </div>
+
+        <div class="tab">פרטים ליצירת קשר:
+            <p><input placeholder="אמייל" id="mail" oninput="this.className = ''"></p>
+            <p><input placeholder="טלפון" id="phone" oninput=" this.className=''"></p>
+        </div>
+
+        <div class="tab">פרטי כניסה:
+            <p><input placeholder="שם משתמש" id="userName" oninput="this.className = ''"></p>
+            <p><input placeholder="סיסמה" id="password" list="pass" oninput="this.className = ''"></p>
+        </div>
+
+        <div style="overflow:auto;">
+            <div style="float:right;">
+                <button type="button" id="prevBtn" onclick="nextPrev(-1)">הקודם</button>
+                <button type="button" id="nextBtn" onclick="nextPrev(1)">הבא</button>
+            </div>
+        </div>
+
+        <!-- Circles which indicates the steps of the form: -->
+        <div style="text-align:center;margin-top:40px;">
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+
+        </div>
+    </form>
+
+    <div id="alert1">
+        <h5>המערכת מעבדת נתונים</h5>
+        <div id="loader"></div>
+
+    </div>
+
+    <div id="alert2">
+        <h5>פרטיך נקלטו בהצלחה</h5>
+        <img id="check" src="assets/Check-04-WF.svg" alt="">
+    </div>
+
+    <script src="script.js"></script>
+    <!-- <script src="script1.js"></script> -->
+    <div id="passen">
+
+    </div>
+    <script src="passenger.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2a40b100ad5f49c6a4140209685e7a84" Name="Diagram1">
+        <EntityTypeShape EntityType="carDBModel.Car" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="carDBModel.DetailsOfTravel" Width="1.5" PointX="5.25" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="carDBModel.Driver" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="carDBModel.Joiner" Width="1.5" PointX="7.5" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="carDBModel.Message" Width="1.5" PointX="5.25" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="carDBModel.Passenger" Width="1.5" PointX="3" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="carDBModel.Person" Width="1.5" PointX="0.75" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="carDBModel.Preference" Width="1.5" PointX="0.75" PointY="9.875" IsExpanded="true" />
+        <AssociationConnector Association="carDBModel.FK_Drivers_ToCar" ManuallyRouted="false" />
+        <AssociationConnector Association="carDBModel.FK_DetailsOfTravel_ToDrivers" ManuallyRouted="false" />
+        <AssociationConnector Association="carDBModel.FK_Joiners_ToDetailsOfTravel" ManuallyRouted="false" />
+        <AssociationConnector Association="carDBModel.FK_Drivers_ToPerson" ManuallyRouted="false" />
+        <AssociationConnector Association="carDBModel.FK_Drivers_ToPreference" ManuallyRouted="false" />
+        <AssociationConnector Association="carDBModel.FK_Joiners_ToPassenger" ManuallyRouted="false" />
+        <AssociationConnector Association="carDBModel.FK_Messages_ToPassengers" ManuallyRouted="false" />
+        <AssociationConnector Association="carDBModel.FK_Messages_ToPerson" ManuallyRouted="false" />
+        <AssociationConnector Association="carDBModel.FK_Passengers_ToPerson" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

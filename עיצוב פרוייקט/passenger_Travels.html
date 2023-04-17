@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="personal.css">
+    <link rel="stylesheet" href="travel.css">
+    <!-- <link rel="stylesheet" href="style.min.css"> -->
+</head>
+
+<body onload=ShowAllPassengerTravels()>
+
+    <div class="person">
+        <div id="home"><a href="index.html">חזרה לדף הבית</a></div>
+        <div class="nav">
+            <div class="name">
+                <span><img src="assets/Business-Man.svg" alt="">
+                    <h6 id="userName">שלום </h6>
+                </span>
+
+            </div>
+            <div class="subject">
+                <h2>נסיעות</h2>
+            </div>
+        </div>
+        <div class="main">
+            <div class="options">
+                <div class="optionss">
+                    <ul class="nav">
+                        <li><a href="mainPersonalPassenger.html"><span class="icon fa fa-home"></span>ראשי</a>
+                        </li><br>
+                        <li><a href="personalPass.html"><span class="current"></span>עדכון פרטים אישיים</a></li>
+                        <li><a href="passenger_Travels.html"><span class="icon fa fa-plane"></span>הנסיעות שלי</a></li>
+                        <br>
+                        <li><a href="PassGiveMessage.html"><span
+                                    class="icon far fa-file"></span> הודעות יוצאות</a></li><br>
+                        <li><a href="PassGetMessage.html"><span
+                                    class="icon far fa-file"></span> הודעות נכנסות</a></li><br>
+                        <li> <img src="assets/Log Out-02-WF.svg" alt=""><input type="button" onclick="exit()"
+                                class="exit" value="יציאה מהחשבון">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="center">
+                <div id="AllTravels1">
+
+                </div>
+
+
+
+
+            </div>
+            <div class="left">
+                <!-- <span onclick="openNav()">open</span> -->
+                <!-- <div id="mySidenav" class="sidenav">
+                    <div>
+                        <span> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></span>
+                        <h4>מצטרפי הנסיעה</h4>
+                    </div>
+                </div> -->
+
+                <!-- <div id="mySidenav1" class="sidenav1">
+                    <div>
+                        <span> <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a></span>
+                        <h4> עדכון נסיעה</h4> <br>
+                    </div>
+
+                    <div class="travely">
+                        <p>
+                            <label for="exit"> יציאה:</label>
+                            <input type="text" placeholder="יציאה" value="" id="exit">
+                        </p>
+                        <p>
+                            <label for="Destination"> יעד:</label>
+                            <input type="text" placeholder="יעד" id="Destination">
+                        </p>
+                        <p>
+                            <label for="startDayAndHour"> תאריך:</label>
+                            <input type="date" placeholder="תאריך התחלה" value="" id="startDayAndHour">
+                        </p>
+
+                        <!-- <input type="date" placeholder="תאריך סיום" class="detail" id="endDay"> -->
+                <!-- <p>
+                    <label for="time"> שעה:</label>
+                    <input type="time" placeholder="שעה" value="" id="time">
+                </p>
+                <p>
+                    <label for="numOfChirs"> מקומות פנויים:</label>
+                    <input type="number" placeholder="מספר מקומות פנויים" value="" id="numOfChirs">
+                </p>
+                <p>
+                    <label for="Price"> עלות לנוסע:</label>
+                    <input type="number" placeholder="מחיר עלות לנוסע" value="" id="Price">
+                </p>
+
+                <input type="button" value="עדכן" class="but" onclick="updateTravel()">
+
+            </div>
+        </div> -->
+
+
+                <!-- Trigger/Open The Modal -->
+                <!-- <div class="btn_warp">
+                    <button id="myBtn" style="vertical-align:middle"><span>הוספת שידוך</span></button>
+                </div> -->
+                <!-- <button id="myBtn" >Open Modal</button> -->
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close">&times;</span>
+                            <h6>ביטול הצטרפות לנסיעה</h6>
+                        </div>
+                        <div class="modal-body">
+                            <p>אתה בטוח שאתה רוצה לבטל את הצטרפותך לנסיעה זו?</p>
+                        </div>
+                        <div class="modal-footer">
+                            <input type="button" value="ביטול" onclick="cancel()">
+                            <input type="button" value="אישור" onclick="GetCancelGoiner()">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="updateData" class="modal">
+
+
+                    <div class="loader"></div>
+                </div>
+            </div>
+            <!-- <button onclick="myFunction()">Show Snackbar</button> -->
+
+            <!-- The actual snackbar -->
+            <div id="snackbar"></div>
+            <script src="script.js"></script>
+            <script src="script1.js"></script>
+
+
+
+
+
+
+            <script>
+                // Get the modal
+                var modal = document.getElementById("myModal");
+
+                // Get the button that opens the modal
+                var btn = document.getElementById("myBtn");
+
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+
+                // When the user clicks the button, open the modal 
+                // btn.onclick = function () {
+                //     modal.style.display = "block";
+                // }
+
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function () {
+                    modal.style.display = "none";
+                }
+
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function (event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
+
+                function cancel() {
+                    modal.style.display = "none";
+                }
+
+
+            </script>
+
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+E:\שנה ב\פרוייקט c#\SERVER\BL\bin\Debug\BL.dll
+E:\שנה ב\פרוייקט c#\SERVER\BL\bin\Debug\BL.pdb
+E:\שנה ב\פרוייקט c#\SERVER\BL\bin\Debug\DAL.dll
+E:\שנה ב\פרוייקט c#\SERVER\BL\bin\Debug\DTO.dll
+E:\שנה ב\פרוייקט c#\SERVER\BL\bin\Debug\DAL.pdb
+E:\שנה ב\פרוייקט c#\SERVER\BL\bin\Debug\DTO.pdb
+E:\שנה ב\פרוייקט c#\SERVER\BL\obj\Debug\BL.csprojAssemblyReference.cache
+E:\שנה ב\פרוייקט c#\SERVER\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+E:\שנה ב\פרוייקט c#\SERVER\BL\obj\Debug\BL.csproj.CopyComplete
+E:\שנה ב\פרוייקט c#\SERVER\BL\obj\Debug\BL.dll
+E:\שנה ב\פרוייקט c#\SERVER\BL\obj\Debug\BL.pdb
+F:\שנה ב\פרוייקט c#\SERVER\BL\bin\Debug\BL.dll
+F:\שנה ב\פרוייקט c#\SERVER\BL\bin\Debug\BL.pdb
+F:\שנה ב\פרוייקט c#\SERVER\BL\bin\Debug\DAL.dll
+F:\שנה ב\פרוייקט c#\SERVER\BL\bin\Debug\DTO.dll
+F:\שנה ב\פרוייקט c#\SERVER\BL\bin\Debug\DAL.pdb
+F:\שנה ב\פרוייקט c#\SERVER\BL\bin\Debug\DTO.pdb
+F:\שנה ב\פרוייקט c#\SERVER\BL\obj\Debug\BL.csproj.AssemblyReference.cache
+F:\שנה ב\פרוייקט c#\SERVER\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+F:\שנה ב\פרוייקט c#\SERVER\BL\obj\Debug\BL.csproj.CopyComplete
+F:\שנה ב\פרוייקט c#\SERVER\BL\obj\Debug\BL.dll
+F:\שנה ב\פרוייקט c#\SERVER\BL\obj\Debug\BL.pdb
+D:\שנה ב\פרוייקט c#\SERVER\BL\bin\Debug\BL.dll
+D:\שנה ב\פרוייקט c#\SERVER\BL\bin\Debug\BL.pdb
+D:\שנה ב\פרוייקט c#\SERVER\BL\bin\Debug\DAL.dll
+D:\שנה ב\פרוייקט c#\SERVER\BL\bin\Debug\DTO.dll
+D:\שנה ב\פרוייקט c#\SERVER\BL\bin\Debug\DAL.pdb
+D:\שנה ב\פרוייקט c#\SERVER\BL\bin\Debug\DTO.pdb
+D:\שנה ב\פרוייקט c#\SERVER\BL\obj\Debug\BL.csprojAssemblyReference.cache
+D:\שנה ב\פרוייקט c#\SERVER\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+D:\שנה ב\פרוייקט c#\SERVER\BL\obj\Debug\BL.csproj.CopyComplete
+D:\שנה ב\פרוייקט c#\SERVER\BL\obj\Debug\BL.dll
+D:\שנה ב\פרוייקט c#\SERVER\BL\obj\Debug\BL.pdb
+C:\Users\משפחת מונטג\Desktop\SERVER\BL\bin\Debug\BL.dll
+C:\Users\משפחת מונטג\Desktop\SERVER\BL\bin\Debug\BL.pdb
+C:\Users\משפחת מונטג\Desktop\SERVER\BL\bin\Debug\DAL.dll
+C:\Users\משפחת מונטג\Desktop\SERVER\BL\bin\Debug\DTO.dll
+C:\Users\משפחת מונטג\Desktop\SERVER\BL\bin\Debug\DAL.pdb
+C:\Users\משפחת מונטג\Desktop\SERVER\BL\bin\Debug\DTO.pdb
+C:\Users\משפחת מונטג\Desktop\SERVER\BL\obj\Debug\BL.csprojAssemblyReference.cache
+C:\Users\משפחת מונטג\Desktop\SERVER\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+C:\Users\משפחת מונטג\Desktop\SERVER\BL\obj\Debug\BL.csproj.CopyComplete
+C:\Users\משפחת מונטג\Desktop\SERVER\BL\obj\Debug\BL.dll
+C:\Users\משפחת מונטג\Desktop\SERVER\BL\obj\Debug\BL.pdb
+F:\SERVER\BL\obj\Debug\BL.csproj.AssemblyReference.cache
+F:\SERVER\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+F:\SERVER\BL\obj\Debug\BL.dll
+F:\SERVER\BL\obj\Debug\BL.pdb
+E:\SERVER\BL\obj\Debug\BL.csprojAssemblyReference.cache
+E:\SERVER\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+E:\SERVER\BL\obj\Debug\BL.dll
+E:\SERVER\BL\obj\Debug\BL.pdb
+E:\SERVER\BL\bin\Debug\BL.dll
+E:\SERVER\BL\bin\Debug\BL.pdb
+E:\SERVER\BL\bin\Debug\DAL.dll
+E:\SERVER\BL\bin\Debug\DTO.dll
+E:\SERVER\BL\bin\Debug\EntityFramework.dll
+E:\SERVER\BL\bin\Debug\DAL.pdb
+E:\SERVER\BL\bin\Debug\DAL.dll.config
+E:\SERVER\BL\bin\Debug\DTO.pdb
+E:\SERVER\BL\bin\Debug\EntityFramework.xml
+E:\SERVER\BL\obj\Debug\BL.csproj.CopyComplete
+C:\Users\Comp15\Desktop\SERVER\BL\bin\Debug\BL.dll
+C:\Users\Comp15\Desktop\SERVER\BL\bin\Debug\BL.pdb
+C:\Users\Comp15\Desktop\SERVER\BL\bin\Debug\DAL.dll
+C:\Users\Comp15\Desktop\SERVER\BL\bin\Debug\DTO.dll
+C:\Users\Comp15\Desktop\SERVER\BL\bin\Debug\EntityFramework.dll
+C:\Users\Comp15\Desktop\SERVER\BL\bin\Debug\DAL.pdb
+C:\Users\Comp15\Desktop\SERVER\BL\bin\Debug\DAL.dll.config
+C:\Users\Comp15\Desktop\SERVER\BL\bin\Debug\DTO.pdb
+C:\Users\Comp15\Desktop\SERVER\BL\bin\Debug\EntityFramework.xml
+C:\Users\Comp15\Desktop\SERVER\BL\obj\Debug\BL.csproj.AssemblyReference.cache
+C:\Users\Comp15\Desktop\SERVER\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+C:\Users\Comp15\Desktop\SERVER\BL\obj\Debug\BL.csproj.CopyComplete
+C:\Users\Comp15\Desktop\SERVER\BL\obj\Debug\BL.dll
+C:\Users\Comp15\Desktop\SERVER\BL\obj\Debug\BL.pdb
+E:\שנה ב\פרוייקט c#\SERVER\BL\bin\Debug\EntityFramework.dll
+E:\שנה ב\פרוייקט c#\SERVER\BL\bin\Debug\DAL.dll.config
+E:\שנה ב\פרוייקט c#\SERVER\BL\bin\Debug\EntityFramework.xml
+F:\שנה ב\פרוייקט c#\SERVER\BL\bin\Debug\EntityFramework.dll
+F:\שנה ב\פרוייקט c#\SERVER\BL\bin\Debug\DAL.dll.config
+F:\שנה ב\פרוייקט c#\SERVER\BL\bin\Debug\EntityFramework.xml
